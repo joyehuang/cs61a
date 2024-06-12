@@ -153,7 +153,16 @@ def play(strategy0, strategy1, update,
     """
     who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
     # BEGIN PROBLEM 5
-    "*** YOUR CODE HERE ***"
+    while score0 < goal and score1 < goal:
+        if who == 0:
+            num_rolls_0 = strategy0(score0, score1) 
+            score0 = update(num_rolls_0, score0, score1, dice)
+        else:
+            num_rolls_1 = strategy1(score1, score0) 
+            score1 = update(num_rolls_1, score1, score0, dice)
+        who = 1 - who
+        
+        
     # END PROBLEM 5
     return score0, score1
 
@@ -178,7 +187,9 @@ def always_roll(n):
     """
     assert n >= 0 and n <= 10
     # BEGIN PROBLEM 6
-    "*** YOUR CODE HERE ***"
+    def strategy(score, opponent_score):
+        return n
+    return strategy
     # END PROBLEM 6
 
 
@@ -209,7 +220,11 @@ def is_always_roll(strategy, goal=GOAL):
     False
     """
     # BEGIN PROBLEM 7
-    "*** YOUR CODE HERE ***"
+    all_rolls = [strategy(score0, score1) for score0 in range(goal) for score1 in range(goal)]
+    for i in range(len(all_rolls) - 1):
+        if all_rolls[i] != all_rolls[i+1]:
+            return False
+    return True
     # END PROBLEM 7
 
 

@@ -2,3 +2,6 @@
 'Question 2-correct', (512, 66)
 'Question 3-correct', (1024, 66)
 'Question 4-correct', (1536, 66)
+'Question 5-correct', (2048, 66)
+'Question 6-correct', (2560, 66)
+'Question 7-correct', (3072, 66)
