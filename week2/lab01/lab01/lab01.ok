@@ -1,6 +1,6 @@
 {
     "name": "Lab 1",
-    "endpoint": "ucb/cs61a/sp24/lab01",
+    "endpoint": "cal/cs61a/fa24/lab01",
     "src": [
         "lab01.py"
     ],
@@ -9,11 +9,10 @@
         "tests/*.py": "ok_test"
     },
     "default_tests": [
-        "control",
+        "return-and-print",
         "debugging-quiz",
-        "falling",
-        "divisible_by_k",
-        "sum_digits"
+        "digit",
+        "middle"
     ],
     "protocols": [
         "restore",

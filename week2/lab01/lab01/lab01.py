@@ -1,3 +1,40 @@
+def digit(n, k):
+    """Return the digit that is k from the right of n for positive integers n and k.
+
+    >>> digit(3579, 2)
+    5
+    >>> digit(3579, 0)
+    9
+    >>> digit(3579, 10)
+    0
+    """
+    for i in range(k + 1):
+        last_digit = n % 10
+        n = n // 10
+    return last_digit
+
+
+def middle(a, b, c):
+    """Return the number among a, b, and c that is not the smallest or largest.
+    Assume a, b, and c are all different numbers.
+
+    >>> middle(3, 5, 4)
+    4
+    >>> middle(30, 5, 4)
+    5
+    >>> middle(3, 5, 40)
+    5
+    >>> middle(3, 5, 40)
+    5
+    >>> middle(30, 5, 40)
+    30
+    """
+    num_list = [a, b, c]
+    num_list.remove(max(num_list))
+    num_list.remove(min(num_list))
+    return num_list[0]
+
+
 def falling(n, k):
     """Compute the falling factorial of n to depth k.
 
@@ -10,14 +47,11 @@ def falling(n, k):
     >>> falling(4, 0)
     1
     """
-    "*** YOUR CODE HERE ***"
-    result = 1
-    while k > 0:
-        result *= n 
+    ans = 1
+    for i in range(k):
+        ans = ans * n
         n -= 1
-        k -= 1
-    return result
-
+    return ans
 
 
 def divisible_by_k(n, k):
@@ -40,7 +74,6 @@ def divisible_by_k(n, k):
     >>> c
     0
     """
-    "*** YOUR CODE HERE ***"
     count = 0
     for i in range(1, n + 1):
         if i % k == 0:
@@ -62,12 +95,10 @@ def sum_digits(y):
     >>> a
     6
     """
-    "*** YOUR CODE HERE ***"
-    sum = 0
-    while y != 0:
-        sum += y % 10
-        y = y // 10
-    return sum
+    ans = 0
+    for i in str(y):
+        ans += int(i)
+    return ans
 
 
 def double_eights(n):
@@ -85,9 +116,13 @@ def double_eights(n):
     >>> double_eights(80808080)
     False
     """
-    "*** YOUR CODE HERE ***"
-    while n != 0:
-        if (n // 10) % 10 == 8 and n % 10 == 8:
+    count = 0
+    for i in str(n):
+        if i == '8':
+            count += 1
+        else:
+            count = 0
+        if count > 1:
             return True
-        n = n // 10
     return False
+

@@ -36,11 +36,12 @@ test = {
           29
           29
           >>> bake(1, "mashed potatoes")
-          mashed potatoes
-          'mashed potatoes'
+          18079ca0c56c783746b70728120f3747
+          575e1338b070e905f49b16443a77012f
+          # locked
           """,
           'hidden': False,
-          'locked': False,
+          'locked': True,
           'multiline': False
         }
       ],
