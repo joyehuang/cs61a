@@ -1,0 +1,14 @@
+"filename", "language", "Python", "Markdown", "comment", "blank", "total"
+"c:\development\cs61a\week1\CS61A Week1.md", "Markdown", 0, -19, 0, -9, -28
+"c:\development\cs61a\week1\hw01\construct_check.py", "Python", -166, 0, -1, -13, -180
+"c:\development\cs61a\week1\hw01\hw01.py", "Python", -90, 0, -2, -15, -107
+"c:\development\cs61a\week1\hw01\tests\__init__.py", "Python", 0, 0, 0, -1, -1
+"c:\development\cs61a\week1\lab0\lab00.py", "Python", -7, 0, 0, -3, -10
+"c:\development\cs61a\week1\lab0\tests\__init__.py", "Python", 0, 0, 0, -1, -1
+"c:\development\cs61a\week1\lab0\tests\python-basics.py", "Python", -30, 0, 0, -1, -31
+"c:\development\cs61a\week3\lab02\lab02\lab02.py", "Python", 113, 0, 0, 15, 128
+"c:\development\cs61a\week3\lab02\lab02\tests\__init__.py", "Python", 0, 0, 0, 1, 1
+"c:\development\cs61a\week3\lab02\lab02\tests\hof-wwpd.py", "Python", 52, 0, 0, 1, 53
+"c:\development\cs61a\week3\lab02\lab02\tests\lambda.py", "Python", 110, 0, 0, 1, 111
+"c:\development\cs61a\week3\lab02\lab02\tests\short-circuit.py", "Python", 86, 0, 0, 1, 87
+"Total", "-", 68, -19, -3, -24, 22

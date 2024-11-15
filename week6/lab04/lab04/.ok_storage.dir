@@ -1,0 +1,4 @@
+'buy-correct', (0, 66)
+'distance-correct', (512, 66)
+'closer_city-correct', (1024, 66)
+'check_city_abstraction-correct', (1536, 66)

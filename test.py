@@ -1,10 +1,3 @@
-def cascade(n):
-
-    if n < 10:
-        print(n)
-    else:
-        print(n)
-        cascade(n//10)
-        print(n)
-
-cascade(2013)
+s = [1, 2, 3, 4, 5]
+t = iter(s)
+print(next(t))

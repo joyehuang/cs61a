@@ -1,0 +1,52 @@
+Date : 2024-11-12 12:16:38
+Directory : c:\development\cs61a\week6
+Total : 13 files,  406 codes, 10 comments, 88 blanks, all 504 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         12 |        383 |          6 |         80 |        469 |
+| C        |          1 |         23 |          4 |          8 |         35 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                             |         13 |        406 |         10 |         88 |        504 |
+| ..                                                            |          5 |       -361 |          0 |        -19 |       -380 |
+| ..\week3                                                      |          5 |       -361 |          0 |        -19 |       -380 |
+| ..\week3\lab02                                                |          5 |       -361 |          0 |        -19 |       -380 |
+| ..\week3\lab02\lab02                                          |          5 |       -361 |          0 |        -19 |       -380 |
+| ..\week3\lab02\lab02 (Files)                                  |          1 |       -113 |          0 |        -15 |       -128 |
+| ..\week3\lab02\lab02\tests                                    |          4 |       -248 |          0 |         -4 |       -252 |
+| hw04                                                          |          3 |        394 |          2 |         60 |        456 |
+| hw04\hw04                                                     |          3 |        394 |          2 |         60 |        456 |
+| hw04\hw04 (Files)                                             |          2 |        394 |          2 |         59 |        455 |
+| hw04\hw04\tests                                               |          1 |          0 |          0 |          1 |          1 |
+| lab04                                                         |          5 |        373 |          8 |         47 |        428 |
+| lab04\lab04                                                   |          5 |        373 |          8 |         47 |        428 |
+| lab04\lab04 (Files)                                           |          3 |        337 |          8 |         45 |        390 |
+| lab04\lab04\tests                                             |          2 |         36 |          0 |          2 |         38 |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                      | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\development\cs61a\week3\lab02\lab02\lab02.py               | Python   |       -113 |          0 |        -15 |       -128 |
+| c:\development\cs61a\week3\lab02\lab02\tests\__init__.py      | Python   |          0 |          0 |         -1 |         -1 |
+| c:\development\cs61a\week3\lab02\lab02\tests\hof-wwpd.py      | Python   |        -52 |          0 |         -1 |        -53 |
+| c:\development\cs61a\week3\lab02\lab02\tests\lambda.py        | Python   |       -110 |          0 |         -1 |       -111 |
+| c:\development\cs61a\week3\lab02\lab02\tests\short-circuit.py | Python   |        -86 |          0 |         -1 |        -87 |
+| c:\development\cs61a\week6\hw04\hw04\construct_check.py       | Python   |        166 |          1 |         13 |        180 |
+| c:\development\cs61a\week6\hw04\hw04\hw04.py                  | Python   |        228 |          1 |         46 |        275 |
+| c:\development\cs61a\week6\hw04\hw04\tests\__init__.py        | Python   |          0 |          0 |          1 |          1 |
+| c:\development\cs61a\week6\lab04\lab04\construct_check.py     | Python   |        166 |          1 |         13 |        180 |
+| c:\development\cs61a\week6\lab04\lab04\lab04.py               | Python   |        148 |          3 |         24 |        175 |
+| c:\development\cs61a\week6\lab04\lab04\test.c                 | C        |         23 |          4 |          8 |         35 |
+| c:\development\cs61a\week6\lab04\lab04\tests\__init__.py      | Python   |          0 |          0 |          1 |          1 |
+| c:\development\cs61a\week6\lab04\lab04\tests\pokemon.py       | Python   |         36 |          0 |          1 |         37 |
+| Total                                                         |          |        406 |         10 |         88 |        504 |
++---------------------------------------------------------------+----------+------------+------------+------------+------------+

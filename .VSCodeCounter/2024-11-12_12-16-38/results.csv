@@ -1,0 +1,10 @@
+"filename", "language", "Python", "C", "comment", "blank", "total"
+"c:\development\cs61a\week6\hw04\hw04\construct_check.py", "Python", 166, 0, 1, 13, 180
+"c:\development\cs61a\week6\hw04\hw04\hw04.py", "Python", 228, 0, 1, 46, 275
+"c:\development\cs61a\week6\hw04\hw04\tests\__init__.py", "Python", 0, 0, 0, 1, 1
+"c:\development\cs61a\week6\lab04\lab04\construct_check.py", "Python", 166, 0, 1, 13, 180
+"c:\development\cs61a\week6\lab04\lab04\lab04.py", "Python", 148, 0, 3, 24, 175
+"c:\development\cs61a\week6\lab04\lab04\test.c", "C", 0, 23, 4, 8, 35
+"c:\development\cs61a\week6\lab04\lab04\tests\__init__.py", "Python", 0, 0, 0, 1, 1
+"c:\development\cs61a\week6\lab04\lab04\tests\pokemon.py", "Python", 36, 0, 0, 1, 37
+"Total", "-", 744, 23, 10, 107, 884
