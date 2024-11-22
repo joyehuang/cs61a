@@ -1,0 +1,91 @@
+classDiagram
+    class Place {
+        +name: String
+        +exit: Place
+        +bees: List
+        +ant: Ant
+        +entrance: Place
+        +add_insect()
+        +remove_insect()
+    }
+
+    class Insect {
+        +health: int
+        +place: Place
+        +damage: int
+        +is_waterproof: bool
+        +reduce_health()
+        +action()
+        +add_to()
+        +remove_from()
+    }
+
+    class Ant {
+        +implemented: bool
+        +food_cost: int
+        +is_container: bool
+        +is_doubled: bool
+        +can_contain()
+        +store_ant()
+        +remove_ant()
+        +double()
+    }
+
+    class Bee {
+        +name: String
+        +damage: int
+        +is_waterproof: bool
+        +sting()
+        +move_to()
+        +blocked()
+        +action()
+    }
+
+    class ContainerAnt {
+        +is_container: bool
+        +ant_contained: Ant
+        +can_contain()
+        +store_ant()
+        +remove_ant()
+    }
+
+    class ThrowerAnt {
+        +damage: int
+        +lower_bound: int
+        +upper_bound: int
+        +nearest_bee()
+        +throw_at()
+        +action()
+    }
+
+    class GameState {
+        +time: int
+        +food: int
+        +places: List
+        +bee_entrances: List
+        +simulate()
+        +deploy_ant()
+        +remove_ant()
+    }
+
+    Insect <|-- Ant
+    Insect <|-- Bee
+    Ant <|-- ContainerAnt
+    Ant <|-- ThrowerAnt
+    ContainerAnt <|-- BodyguardAnt
+    ContainerAnt <|-- TankAnt
+    ThrowerAnt <|-- ShortThrower
+    ThrowerAnt <|-- LongThrower
+    ThrowerAnt <|-- ScubaThrower
+    ThrowerAnt <|-- QueenAnt
+    Ant <|-- FireAnt
+    Ant <|-- WallAnt
+    Ant <|-- HarvesterAnt
+    Ant <|-- HungryAnt
+    Place <|-- Water
+    Place <|-- Hive
+    Place <|-- AntHomeBase
+
+    GameState --> Place : manages
+    Place --> Insect : contains
+    Insect --> Place : lives in
