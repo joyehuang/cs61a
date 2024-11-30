@@ -1,0 +1,3 @@
+'ascending?-correct', (0, 66)
+'interleave-correct', (512, 66)
+'no-repeats-correct', (1024, 66)
