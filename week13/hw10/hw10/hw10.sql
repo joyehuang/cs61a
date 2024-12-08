@@ -26,24 +26,46 @@ CREATE TABLE sizes AS
 
 -- All dogs with parents ordered by decreasing height of their parent
 CREATE TABLE by_parent_height AS
-  SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
+  SELECT child.name
+  FROM dogs AS child, dogs AS parent, parents
+  WHERE child.name = parents.child
+    AND parent.name = parents.parent
+  ORDER BY parent.height DESC;
 
 
 -- The size of each dog
 CREATE TABLE size_of_dogs AS
-  SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
+  SELECT dogs.name, sizes.size
+  FROM dogs, sizes
+  WHERE dogs.height > sizes.min 
+    AND dogs.height <= sizes.max;
 
 
 -- [Optional] Filling out this helper table is recommended
 CREATE TABLE siblings AS
-  SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
+  SELECT a.child AS first, b.child AS second
+  FROM parents AS a, parents AS b
+  WHERE a.parent = b.parent AND a.child < b.child;
 
 -- Sentences about siblings that are the same size
 CREATE TABLE sentences AS
-  SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
+  SELECT "The two siblings, " || first || " and " || second || ", have the same size: " || s1.size
+  FROM siblings, size_of_dogs AS s1, size_of_dogs AS s2
+  WHERE siblings.first = s1.name 
+    AND siblings.second = s2.name
+    AND s1.size = s2.size;
 
 
 -- Height range for each fur type where all of the heights differ by no more than 30% from the average height
 CREATE TABLE low_variance AS
-  SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
+  WITH avg_heights AS (
+    SELECT fur, AVG(height) as avg_height
+    FROM dogs
+    GROUP BY fur
+  )
+  SELECT d.fur, MAX(d.height) - MIN(d.height) AS height_range
+  FROM dogs d, avg_heights a
+  WHERE d.fur = a.fur
+  GROUP BY d.fur
+  HAVING MAX(ABS(height - avg_height) / avg_height) <= 0.3;
 
